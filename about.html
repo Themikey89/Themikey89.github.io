@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1.5px solid gray;
+}
+
+header, footer {
+	font 
+    padding: 1em;
+    color: white;
+    background-color: red;
+    clear: left;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1.5em;
+    overflow: hidden;
+}
+</style>
+</head>
 <body>
 
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+<div class="container">
 
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "30px Arial";
-ctx.fillText("About me",10,50);
-</script>
+<header>
+   <h1 style="Verdana;">About me</h1>
+</header>
+  
+
+<article>
+  <h1><font face="courier" size="+3" color="#000000">Michael Elizalde
+  </font></h1>
+  <p>I'm A student studying computer engineering. </p>
+</article>
+
+<footer> Come again </footer>
+
+</div>
 
 </body>
 </html>
