@@ -7,6 +7,12 @@ div.container {
     border: 1px solid gray;
 }
 
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 header, footer {
     padding: 1em;
     color: aqua;
@@ -26,7 +32,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
-   
+
 nav ul a {
     text-decoration: none;
 }
@@ -36,6 +42,10 @@ article {
     border-left: 1px solid gray;
     padding: 8em;
     overflow: hidden;
+
+    /* Add animation */
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 </style>
 </head>
@@ -44,19 +54,19 @@ article {
 <div class="container">
 
 <header>
-   <h1>Engineering A Future</h1>
+   <h1>A Cyber Myki App</h1>
 </header>
   
 <nav>
   <ul>
     <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
 <article>
-  <h1>Building a better world</h1>
-  <p>Welcome to my website. It's still under development please be patient.</p>
+  <h1>Hello, I'm CyberMyki!</h1>
+  <p>Welcome to my page! I'm just a software developer that likes to code.</p>
 </article>
 
 </div>
